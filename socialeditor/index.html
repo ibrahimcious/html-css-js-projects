@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Editor -- Simple Editor to Create and Publish Social Media Pages</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"
+    integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="https://bytegrad.com/course-assets/css/1/favicon.png" </head>
+
+<body class="app">
+  <header class="header">
+    <img src="https://res.cloudinary.com/dx6ecncex/image/upload/v1620757017/Group_13_uyn5ja.svg" alt="Logo"
+      class="logo">
+    <button class="dd-toggle">File</button>
+    <button class="dd-toggle">View</button>
+    <button class="dd-toggle">New</button>
+    <button class="dd-toggle">
+      <i class="fas fa-crown dd-toggle__icon"></i>
+    </button>
+    <button class="dd-toggle">
+      <i class="fas fa-bell dd-toggle__icon"></i>
+    </button>
+    <button class="dd-toggle">
+      <img
+        src="https://images.unsplash.com/photo-1614247484197-9c6164bb532f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=60&q=100"
+        alt="User Photo" class="dd-toggle__img">
+      <span class="dd-toggle_text">Ibrahim</span>
+    </button>
+  </header>
+
+  <div class="app__container">
+    <div class="sidebar">
+      <section class="menu">
+        <button class="menu__button">
+          <i class="fas fa-layer-group menu__icon"></i>
+          <span class="menu__text">Templates</span>
+        </button>
+                <button class="menu__button menu__button--active">
+          <i class="fas fa-image menu__icon"></i>
+          <span class="menu__text">Images</span>
+        </button>
+        <button class="menu__button">
+          <i class="fas fa-font menu__icon"></i>
+          <span class="menu__text">Text/Font</span>
+        </button>
+        <button class="menu__button">
+          <i class="fas fa-shapes menu__icon"></i>
+          <span class="menu__text">Shapes</span>
+        </button>
+
+      </section>
+
+
+
+      <footer class="footer">
+        <small class="copyright">&copy; 2050 SocialEditor. All rights reserved.</small>
+      </footer>
+      
+    </div>
+       <section class="panel">
+        <div class="panel__top">
+          <h1 class="first-heading">Images</h1>
+          <i class="fas fa-angle-double-left panel__collapse-icon"></i>
+        </div>
+        <div class="panel__images">
+          <img class="panel__img" src="https://plus.unsplash.com/premium_photo-1669055554327-ae713c9c5800?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" alt="" class="panel__img">
+          <img class="panel__img" src="https://images.unsplash.com/photo-1714916666512-ece33404f093?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="" class="panel__img">
+          <img class="panel__img" src="https://images.unsplash.com/photo-1715010744925-37a5b83e0d75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8" alt="" class="panel__img">
+          <img class="panel__img" src="https://images.unsplash.com/photo-1714907135093-e60f0a730574?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8" alt="" class="panel__img">
+          <img class="panel__img" src="https://images.unsplash.com/photo-1714889981560-cb25b0314952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D" alt="" class="panel__img">
+          <button class="panel__btn">
+            <i class="fas fa-plus panel__upload-icon"></i>
+          </button>
+        </div>
+      </section>   
+    
+    <main class="main">
+     <div class="info-bar">
+       <section class="breadcrumbs">
+         <a href="#" class="breadcrumbs__link">Facebook Posts</a>
+         <i class="fas fa-angle-right breadcrumbs__icon"></i>
+         <span class="breadcrumbs__name">Happy-Hour-Friday</span>
+       </section>
+       <button class="button">Publish</button>
+     </div> 
+    </main>
+  </div>
+
+</body>
+
+</html>

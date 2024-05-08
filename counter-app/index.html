@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Counter App</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+  </head>
+
+  <body>
+    <div class="counter">
+      <h1 class="counter__title">Counter App</h1>
+      <span class="counter__value" my-value="0">0</span>
+      <button
+        _="on click set .counter__value.textContent to '0'"
+        class="counter__reset-button"
+      >
+        <i class="fas fa-sync-alt counter__reset-icon"></i>
+      </button>
+      <div class="counter__buttons">
+        <button
+          _="on click decrement .counter__value.textContent then put it into the <span />"
+          class="counter__button counter__button--decrease"
+        >
+          <i class="fas fa-minus counter__icon counter__icon--minus"></i>
+        </button>
+        <button
+          _="on click increment .counter__value.textContent then put it into the <span />"
+          class="counter__button counter__button--increase"
+        >
+          <i class="fas fa-plus counter__icon counter__icon--plus"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
