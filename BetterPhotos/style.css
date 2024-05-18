@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  scrollbar-width: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  background-image: url(https://bytegrad.com/course-assets/css/2/pattern.svg),
+    linear-gradient(to bottom right, #8fd861, #2cc695 90%);
+}
+
+.page::-webkit-scrollbar {
+  display: none;
+}
+
+.app {
+  height: 1240px;
+  width: 1030px;
+  background-color: #fff;
+  box-shadow: 0 25px 150px rgba(0, 0, 0, 0.65);
+  margin: 80px 30px;
+}
